@@ -1,0 +1,1 @@
+export const PRICES_MICROSERVICE = Symbol("PRICES_MICROSERVICE");
