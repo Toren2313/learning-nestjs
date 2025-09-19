@@ -3,6 +3,9 @@ import { PricesMicroserviceModule } from "./prices-microservice.module";
 import { MicroserviceOptions } from "@nestjs/microservices";
 import { AppConfigService } from "@app/app-config";
 
+//* Getting context and injecting config service
+//* then creating new Microservice app
+
 async function bootstrap(): Promise<void> {
   const context = await NestFactory.createApplicationContext(PricesMicroserviceModule);
   const config = context.get(AppConfigService);
